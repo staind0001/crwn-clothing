@@ -14,8 +14,6 @@ const userReducer = (state = INITIAL_STATE,action) => {
                 currentUser:action.payload
             }
             
-            
-    
         default:
             return state;
     }
