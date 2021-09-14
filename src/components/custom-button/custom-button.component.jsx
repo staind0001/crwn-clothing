@@ -5,12 +5,14 @@ import './custom-button.styles.scss'
 
 
 
-const CustomButton = ({children, isGoogleSignIn, ...otherProps}) => (
+const CustomButton = ({children, isGoogleSignIn, inverted, ...otherProps}) => (
     <Button 
         className={`${isGoogleSignIn ? 'google-sign-in':''} custom-button`}
         rounded 
         size='medium' 
-        dark {...otherProps} >
+        dark 
+        {...otherProps} 
+    >
         {children}
     </Button>  
 );
