@@ -4,7 +4,10 @@
   height: 340px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+  color: aliceblue;
   border: 1px solid white;
   background: linear-gradient(
       to left,
@@ -12,8 +15,13 @@
       rgb(146, 23, 14) 100%
   );
   top: 90px;
-  right: 40px;
+  right: 50px;
   z-index: 5;
+
+  .empty-message{
+    font-size: 18px;
+    margin: 50px auto;
+  }
 
   .cart-items {
     height: 280px;
